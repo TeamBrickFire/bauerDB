@@ -46,6 +46,9 @@ create table bt_square
 (
 	id varchar(36) null,
 	field_id varchar(36) null,
+	x int null;
+	y int null;
+	blocked boolean default false null;
 	constraint bt_square_pk
 		primary key (id),
 	constraint bt_square_bt_field_id_fk
